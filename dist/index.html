@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Hub - Test2</title>
+    <!----------- Font Awesome ------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!---------------- Wow Animation CDN------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="font-nunito">
+    <div class="w-screen h-auto sm:px-3 md:px-60 relative ">
+      <!----------------------------------------------------
+                          NAVBAR SECTION
+      ------------------------------------------------------->
+      <nav
+        id="home"
+        class="relative flex items-center justify-between pt-10 mb-10 sm:pr-10"
+      >
+        <!------ Logo ------>
+        <figure class="w-auto h-auto">
+          <a href="#home">
+            <img
+              class="w-64 h-auto hidden md:block"
+              src="https://home.metadapp.com/assets/img/logo-beta.png"
+              alt="Logo"
+            />
+            <img
+              class="w-80 h-auto md:hidden sm:block"
+              src="https://home.metadapp.com/assets/img/mlogo-beta.png"
+              alt="Logo"
+            />
+          </a>
+        </figure>
+        <!--------- Nav List-------->
+        <div
+          class="md:flex items-center justify-between w-full sm:hidden font-nunito"
+        >
+          <a href="#features" class="font-semibold text-textColor text-2xl">
+            Features
+          </a>
+          <a href="#automation" class="font-semibold text-textColor text-2xl">
+            Automation tools
+          </a>
+          <a href="#dashboard" class="font-semibold text-textColor text-2xl">
+            Dashboards
+          </a>
+          <a href="#competitors" class="font-semibold text-textColor text-2xl">
+            Competitors
+          </a>
+          <a href="#vision" class="font-semibold text-textColor text-2xl"> Vision </a>
+          <a
+            href="https://tech-hub-spaces-test.netlify.app/"
+            class="font-semibold text-textColor text-2xl px-5 py-5 bg-secondaryColor rounded-2xl"
+          >
+            Go To Dashboard
+          </a>
+        </div>
+        <i class="fa-regular fa-bars md:hidden sm:block text-textColor text-3xl cursor-pointer"></i>
+      </nav>
+
+      <!---------------------------------------------------
+                        HERO SECTION
+      ------------------------------------------------------->
+      <div
+        class="flex sm:flex-col md:flex-row md:h-screen sm:h-auto sm:w-full sm:mb-20 sm:px-5"
+      >
+        <!-------- Left Item -------->
+        <div
+          class="md:w-1/2 flex flex-col h-auto sm:pt-8 md:pt-32 space-y-20"
+        >
+          <a
+            href="#"
+            class="text-textColor bg-tertiaryColor px-0 py-4 font-bold rounded-3xl sm:text-xl md:text-2xl md:w-10/12"
+          >
+            <span
+              class="bg-textColor text-black px-8 py-4 font-extrabold rounded-3xl mr-4 sm:text-xl md:text-2xl"
+              >NEW</span
+            >
+            📢 Click here to read our Manifesto &rarr;
+          </a>
+          <h2 class="text-textColor font-bold sm:text-6xl md:text-7xl">
+            All In One <br />
+            <span
+              class="sm:text-6xl md:text-7xl font-extrabold flex flex-row items-center"
+            >
+              Web3 Dashboard
+              <figure class="w-20 h-auto">
+                <img
+                  src="https://home.metadapp.com/assets/videos/rocketgif.gif"
+                  alt="Rocket"
+                  class="w-fit h-fit"
+                />
+              </figure>
+            </span>
+          </h2>
+          <p class="text-textColor text-2xl">
+            Metadapp is a connected ecosystem of Advanced Analytics and
+            Automation tools integrated into one intuitive dashboard interface.
+          </p>
+          <a
+            href="https://tech-hub-spaces-test.netlify.app/"
+            class="font-semibold text-textColor text-2xl px-5 py-5 bg-secondaryColor rounded-2xl inline sm:w-40 hero-btn"
+          >
+            Go To Dashboard
+          </a>
+        </div>
+        <!-------- Right Item -------->
+        <div
+          class="sm:hidden md:flex w-1/2 flex-1 h-full relative"
+        >
+          <figure class="absolute w-96 h-auto ball-1">
+            <img
+              src="https://home.metadapp.com/assets/img/centerballimg.png"
+              alt="Metadapp Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-44 h-auto ball-2">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/avalanche-bub.png"
+              alt="Avalanche Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-44 h-auto ball-3">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Group 3221@2x.png"
+              alt="Polygon Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-36 h-auto ball-4">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Glass_Ball.L11@2x.png"
+              alt="Glass Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-44 h-auto ball-5">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Group 3220@2x.png"
+              alt="Solana Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-44 h-auto ball-6">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Group 3219@2x.png"
+              alt="Coming Soon Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-32 h-auto ball-7">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Group 3208@2x.png"
+              alt="Binance Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-60 h-auto ball-8">
+            <img
+              src="https://home.metadapp.com/assets/img/ethereumimg.png"
+              alt="Ethereum Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-44 h-auto ball-9">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Group 3224@2x.png"
+              alt="Glass Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+          <figure class="absolute w-96 h-auto ball-10">
+            <img
+              src="https://home.metadapp.com/assets/img/Banner Assets/Group 3223@2x.png"
+              alt="Cardano Ball"
+              class="w-fit h-fit"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <!---------------------------------------------------
+                        FEATURES SECTION
+      ------------------------------------------------------->
+      <div
+        id="features"
+        class="w-auto h-auto ml-0 mb-40 flex flex-col justify-center items-center pt-10 animated wow zoomIn" data-wow-delay="1s"
+      >
+        <h2
+          class="sm:text-4xl md:text-6xl font-bold text-textColor text-center mb-20 md:w-72"
+        >
+          Discover, Analyse and Automate all Your Investment positions in one
+          place
+        </h2>
+
+        <p
+          class="sm:text-2xl md:text-3xl font-semibold text-secondaryColor text-center mb-20"
+        >
+          Checkout Some of Our Outstanding Features
+        </p>
+        <div class="w-auto h-auto relative slider">
+          <ul class="slide-wrapper">
+            <li class="h-auto relative slide-list">
+              <div class="container mx-auto space-y-20">
+                <h2
+                  class="text-textColor font-bold sm:text-6xl md:text-5xl text-center"
+                >
+                  Premium NFT Tools
+                </h2>
+                <p
+                  class="text-textColor font-medium sm:text-2xl md:text-3xl text-center"
+                >
+                  Conduct in-depth analysis of the entire NFT market in one glance.
+                  track your NFT portfolio, view rarity rankings, Snipe, Bid, buy &
+                  sell collectibles on Opensea and other market places without leaving
+                  your metadapp dashboard.
+                </p>
+              </div>
+              <figure class="w-full h-auto">
+                <img
+                  src="https://home.metadapp.com/assets/img/nft-carosuel.png"
+                  alt="Tablet view"
+                  class="w-full h-full"
+                />
+              </figure>
+              <h2
+              class="absolute sm:bottom-5 md:bottom-10 text-textColor font-bold sm:text-2xl md:text-5xl left-1/2 -translate-x-1/2"> There's Even More!! </h2>
+              <i id="prev" class="fa-solid fa-chevron-left absolute text-tertiaryColor text-6xl cursor-pointer top-1/2 left-52 font-extrabold hover:text-textColor"></i>
+              <i id="next" class="fa-solid fa-chevron-right absolute text-tertiaryColor text-6xl cursor-pointer top-1/2 right-52 font-extrabold hover:text-textColor"></i>
+            </li>
+            <li class="h-auto relative hidden slide-list">
+              <div class="container mx-auto space-y-20">
+                <h2
+                  class="text-textColor font-bold sm:text-6xl md:text-5xl text-center"
+                >
+                  Tradeviewer with in-built DEX
+                </h2>
+                <p
+                  class="text-textColor font-medium sm:text-2xl md:text-3xl text-center"
+                >
+                  Perform real-time technical charts analysis of any token pair, Use Fiat On-ramps, Execute, Buy & Sell orders on selected pairs without leaving the page. <br> Maximize profit while still saving on gas fees.
+                </p>
+              </div>
+              <figure class="w-screen h-auto">
+                <img
+                  src="https://home.metadapp.com/assets/img/nft-carosuel.png"
+                  alt="Tablet view"
+                  class="w-full h-full"
+                />
+              </figure>
+              <h2
+              class="absolute sm:bottom-5 md:bottom-10 text-textColor font-bold sm:text-2xl md:text-5xl left-1/2 -translate-x-1/2"> There's Even More!! </h2>
+              <i id="prev" class="fa-solid fa-chevron-left absolute text-tertiaryColor text-6xl cursor-pointer top-1/2 left-52 font-extrabold hover:text-textColor"></i>
+              <i id="next" class="fa-solid fa-chevron-right absolute text-tertiaryColor text-6xl cursor-pointer top-1/2 right-52 font-extrabold hover:text-textColor"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---------------------------------------------------
+                        AUTOMATION SECTION
+      ------------------------------------------------------->
+      <div
+        id="automation"
+        class="pt-10 md:container flex flex-col space-y-20 items-center justify-center sm:w-full sm:mb-20"
+      >
+        <h2 class="text-textColor font-bold text-6xl text-center">
+          Smart Alerts
+        </h2>
+        <p class="text-textColor md:text-3xl text-center">
+          Perform ‘’If that, then what’’ complex logics on any smart contract
+          address <br />
+          and defi Protocol and receive real time notifications when the events
+          <br />
+          happen via email, telegram, and even sms.
+        </p>
+        <div
+          class="w-full h-auto flex flex-col justify-center items-center relative"
+        >
+          <div
+            class="w-full h-auto absolute top-0 left-0 flex flex-col justify-center items-center"
+          >
+            <figure class="w-full h-auto hidden md:block">
+              <img
+                src="https://home.metadapp.com/assets/img/Shape 2.svg"
+                alt="Curvy Line"
+                class="w-fit h-fit"
+              />
+            </figure>
+            <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full bottom-20 left-0 hidden md:block"
+            >
+              <img
+                src="https://home.metadapp.com/assets/img/graph1.svg"
+                alt="Graph icon 1"
+                class="w-fit h-fit"
+              />
+            </figure>
+            <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full bottom-0 left-96 hidden md:block"
+            >
+              <img
+                src="https://home.metadapp.com/assets/img/graph4.svg"
+                alt="Graph icon 2"
+                class="w-fit h-fit"
+              />
+            </figure>
+            <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full bottom-52 left-1/2 hidden md:block"
+            >
+              <img
+                src="https://home.metadapp.com/assets/img/graph2.svg"
+                alt="Graph icon 3"
+                class="w-fit h-fit"
+              />
+            </figure>
+            <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full bottom-72 right-80 hidden md:block"
+            >
+              <img
+                src="https://home.metadapp.com/assets/img/graph5.svg"
+                alt="Graph icon 4"
+                class="w-fit h-fit"
+              />
+            </figure>
+            <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full -top-10 right-0 hidden md:block"
+            >
+              <img
+                src="https://home.metadapp.com/assets/img/graph3.svg"
+                alt="Graph icon 5"
+                class="w-fit h-fit"
+              />
+            </figure>
+          </div>
+          <div
+            class="w-full sm:auto md:h-screen flex flex-col justify-between relative sm:px-10"
+          >
+            <div
+              class="flex flex-col space-y-8 md:h-64 md:absolute md:w-1/3 md:bottom-44 md:left-0 sm:w-full sm:h-auto sm:bg-tertiaryColor md:bg-transparent sm:rounded-2xl md:rounded-none sm:px-10 md:px-0 sm:py-10 md:py-0 sm:mb-20 md:mb-0 relative"
+            >
+              <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full md:hidden -top-10 left-7"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/graph1.svg"
+                  alt="Graph icon 1"
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h4 class="text-secondaryColor font-bold text-2xl">
+                Flash attack alerts
+              </h4>
+              <p class="text-textColor text-lg text-xl md:pr-20">
+                Get notified when any token/liquidity pool with at least $2000
+                in liquidiity has a sudden price dip in the last 60 seconds.
+                (Ideal for spotting flashloan attacks & Dumps before anyone
+                else)
+              </p>
+            </div>
+            <div
+              class="flex flex-col space-y-8 md:h-64 md:absolute md:w-1/3 md:top-1/2 md:left-1/2 md:-translate-x-10 md:-translate-y-1/3 sm:w-full sm:h-auto sm:bg-tertiaryColor md:bg-transparent sm:rounded-2xl md:rounded-none sm:px-10 md:px-0 sm:py-10 md:py-0 sm:mb-20 md:mb-0 relative"
+            >
+              <figure
+                class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full -top-10 left-7 md:hidden"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/graph4.svg"
+                  alt="Graph icon 2"
+                  class="w-fit h-fit"
+                />
+              </figure>  
+              <h4 class="text-secondaryColor font-bold text-2xl">
+                Whale Watching
+              </h4>
+              <p class="text-textColor text-lg text-xl md:pr-20">
+                Monitor any wallet address across chain, to get notified when
+                money moves based on the parameters you set.
+              </p>
+            </div>
+            <div
+              class="flex flex-col space-y-8 md:h-64 md:absolute md:w-1/3 md:top-20 md:-right-96 sm:w-full sm:h-auto sm:bg-tertiaryColor md:bg-transparent sm:rounded-2xl md:rounded-none sm:px-10 md:px-0 sm:py-10 md:py-0 sm:mb-20 md:mb-0 relative"
+            >
+              <figure
+                class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full -top-10 left-7 md:hidden"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/graph2.svg"
+                  alt="Graph icon 3"
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h4 class="text-secondaryColor font-bold text-2xl">
+                Compound protocol alerts
+              </h4>
+              <p class="text-textColor text-lg text-xl md:pr-20">
+                Monitor your account liquidity to prevent liquidation. Also
+                monitor interest rates and set custom thresholds to discover
+                lending opportunities.
+              </p>
+            </div>
+            <div
+              class="flex flex-col space-y-8 md:h-64 md:absolute md:w-1/3 md:top-1/4 md:left-60 sm:w-full sm:h-auto sm:bg-tertiaryColor md:bg-transparent sm:rounded-2xl md:rounded-none sm:px-10 md:px-0 sm:py-10 md:py-0 sm:mb-20 md:mb-0 relative"
+            >
+              <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full -top-10 left-7 md:hidden"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/graph5.svg"
+                  alt="Graph icon 4"
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h4 class="text-secondaryColor font-bold text-2xl">
+                AAVE protocol alerts
+              </h4>
+              <p class="text-textColor text-lg text-xl md:pr-20">
+                Track your AAVE collateral factor and prevent your account from
+                ever getting liquidated again. You can also monitor your
+                interest rates to spot when there's a lending opportunity.
+              </p>
+            </div>
+            <div
+              class="flex flex-col space-y-8 md:h-64 md:absolute md:w-1/3 md:left-1/2 md:top-20 sm:w-full sm:h-auto sm:bg-tertiaryColor md:bg-transparent sm:rounded-2xl md:rounded-none sm:px-10 md:px-0 sm:py-10 md:py-0 relative"
+            >
+              <figure
+              class="absolute w-24 h-auto bg-secondaryColor p-1 rounded-full -top-10 left-7 md:hidden"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/graph3.svg"
+                  alt="Graph icon 5"
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h4 class="text-secondaryColor font-bold text-2xl">DEX alert</h4>
+              <p class="text-textColor text-lg text-xl md:pr-20">
+                Create any token price alert, monitor liquidity pairs and track
+                token swaps across top dexes like pancakeswap, uniswap, sushiwap
+                & quickswap.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------
+                              BOT GRID
+      ------------------------------------------------------->
+      <div
+        class="container mx-auto flex flex-col space-y-20 items-center justify-center md:mb-40 sm:mb-20"
+      >
+        <h2 class="text-textColor font-bold text-6xl text-center">
+          Automation Bots
+        </h2>
+        <p class="text-textColor text-2xl text-center mb-20">
+          Our battle tested smart contracts will help you automate arbitrary
+          logics that improves your defi investing experience. <br />
+          With our bots you don't need to spend countless productive hours
+          watching the markets anymore. <br />
+          they'll do it for you.
+        </p>
+        <div class="container mx-auto h-auto sm:w-full">
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-16 md:px-60">
+            <div
+              class="bg-tertiaryColor px-10 py-5 rounded-3xl space-y-6 h-auto"
+            >
+              <figure
+                class="w-24 h-auto bg-secondaryColor p-3 justify-center items-center flex imgBgRound"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/ezgif.com-gif-maker (3)@2x.png"
+                  alt=""
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h3 class="text-textColor font-bold text-3xl">
+                Limit Order bots
+              </h3>
+              <p class="text-textColor text-2xl">
+                Specify your preferred prices and execute limit orders on your
+                favorite pairs across multiple blockchains.
+              </p>
+            </div>
+            <div
+              class="bg-tertiaryColor px-10 py-5 rounded-3xl space-y-6 md:h-auto"
+            >
+              <figure
+                class="w-24 h-auto bg-secondaryColor p-3 justify-center items-center flex imgBgRound"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/ezgif.com-gif-maker (2)@2x.png"
+                  alt=""
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h3 class="text-textColor font-bold text-3xl">
+                Liquidity pool bots
+              </h3>
+              <p class="text-textColor text-2xl">
+                Deploy your assets in one transaction across different liquidity
+                pools without leaving the dashboard, saving you significant time
+                and gas fees.
+              </p>
+            </div>
+            <div
+              class="bg-tertiaryColor px-10 py-5 rounded-3xl space-y-6 md:h-96"
+            >
+              <figure
+                class="w-24 h-auto bg-secondaryColor p-3 justify-center items-center flex imgBgRound"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/ezgif.com-gif-maker (2)@2x.png"
+                  alt=""
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h3 class="text-textColor font-bold text-3xl">
+                Custom DeFi bots
+              </h3>
+              <p class="text-textColor text-2xl">
+                The potential use cases for our bots are endless, all you have
+                to do is let us know what you want, we will build it.
+              </p>
+            </div>
+            <div
+              class="bg-tertiaryColor px-10 py-5 rounded-3xl space-y-6 md:h-auto"
+            >
+              <figure
+                class="w-24 h-auto bg-secondaryColor p-3 justify-center items-center flex imgBgRound"
+              >
+                <img
+                  src="https://home.metadapp.com/assets/img/ezgif.com-gif-maker (1)@2x.png"
+                  alt=""
+                  class="w-fit h-fit"
+                />
+              </figure>
+              <h3 class="text-textColor font-bold text-3xl">NFT bots</h3>
+              <p class="text-textColor text-2xl">
+                Our NFT bots make your journey into the metaverse more
+                convenient and profitable. you will be able to perform automated
+                functions on NFT marketplaces, buy, sell, breed and collect
+                items with a few simple clicks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------
+                            DASHBOARD
+      ------------------------------------------------------->
+      <div id="dashboard" class="w-full h-auto pt-20 md:mb-60 sm:mb-10 sm:px-5">
+        <h2 class="text-textColor font-bold text-5xl mb-10">
+          Portfolio Management
+        </h2>
+        <p class="text-textColor text-2xl mb-20 md:w-1/2">
+          Our end-to-end integrated approach allows you to have easy access to
+          View, track, manage, and monitor your entire Defi Portfolio across
+          all protocols from one place.
+        </p>
+        <div class="flex md:flex-row sm:flex-col-reverse">
+          <div class="container flex-1
+        ">
+          <div class="flex flex-col justify-start items-start space-y-10">
+            <p
+              class="text-textColor text-2xl font-bold flex justify-center items-center"
+            >
+              <i
+                class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+              ></i>
+              View your token holdings & Transaction history
+            </p>
+            <p
+              class="text-textColor text-2xl font-bold flex justify-center items-center"
+            >
+              <i
+                class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+              ></i>
+              Track your yield farming rewards
+            </p>
+            <p
+              class="text-textColor text-2xl font-bold flex justify-center items-center"
+            >
+              <i
+                class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+              ></i>
+              Calculate impermanent loss
+            </p>
+            <p
+              class="text-textColor text-2xl font-bold flex justify-center items-center"
+            >
+              <i
+                class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+              ></i>
+              Manage your Defi Liquidity pool positions
+            </p>
+            <p
+              class="text-textColor text-2xl font-bold flex justify-center items-center"
+            >
+              <i
+                class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+              ></i>
+              View your nft collections and track profitablility
+            </p>
+          </div>
+          </div>
+          <div
+          class="md:w-1/2 sm:w-full sm:h-screen md:h-full relative sm:mb-20"
+        >
+          <div class="border-rotate1 rounded-full absolute md:left-10 md:-top-80 sm:left-10 sm:top-0"></div>
+          <div
+            class="border-rotate2 rounded-full absolute md:-bottom-60 md:-right-40 sm:bottom-0 sm:right-10"
+          ></div>
+          <figure class="banner-image absolute h-auto -translate-x-1/2 -translate-y-1/2 sm:w-full sm:top-1/2 sm:left-1/2">
+            <img
+              src="https://home.metadapp.com/assets/img/portfolio-img.png"
+              alt="Portfolio Image"
+              class="w-fit h-fit"
+            />
+          </figure>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------
+                        DUE DILLIGENCE TOOLS
+      ------------------------------------------------------->
+      <div
+        class="w-full mx-auto md:h-screen sm:h-auto pt-20 mb-20 sm:px-5"
+      >
+        <div class="flex flex-col md:justify-end md:items-end md:w-full sm:w-full sm:mb-10">
+          <h2 class="text-textColor font-bold text-5xl mb-10 md:w-1/2 sm:w-full">
+            Due Dilligence Tools
+          </h2>
+          <p class="text-textColor text-2xl mb-20 md:w-1/2 sm:w-full">
+            Our due dilligence dashboard does an elaborate Analyses of any
+            token’s Internal smart contract functions to discover hidden attack
+            vectors bad actors do not want you to see. At Metadapp, we say..
+            Don’t trust, Verify.
+          </p>
+        </div>
+        <div class="flex md:flex-row sm:flex-col">
+          <div class="flex-1 flex flex-col justify-center items-center md:relative sm:mb-20">
+            <figure class="w-full h-auto md:absolute md:-top-64 md:-left-32">
+              <img
+                src="https://home.metadapp.com/assets/img/rugpullsniffer.svg"
+                alt="Dashboards"
+              />
+            </figure>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col justify-start items-start space-y-10">
+              <p
+                class="text-textColor text-2xl font-bold flex justify-center items-center"
+              >
+                <i
+                  class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+                ></i>
+                <span>
+                  <span class="font-extrabold">
+                    Scan tokens for malicious contract functions
+                  </span>
+                  <br />
+                  Protect yourself from honeypots and other known rug-pull methods
+                  devised by dishonest projects looking to steal your money.
+                </span>
+              </p>
+              <p
+                class="text-textColor text-2xl font-bold flex justify-center items-center"
+              >
+                <i
+                  class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+                ></i>
+                <span>
+                  <span class="font-extrabold"> Conduct due diligence </span>
+                  <br />
+                  Never ape into any project without using metadapp rug checker
+                  first to help you make better judgement.
+                </span>
+              </p>
+              <p
+                class="text-textColor text-2xl font-bold flex justify-center items-center"
+              >
+                <i
+                  class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+                ></i>
+                <span>
+                  <span class="font-extrabold"> Revoke Token approvals </span>
+                  <br />
+                  Many users unknowingly share unlimited access to their wallets
+                  with different platforms including scam ones. with this feature,
+                  you can see all the platforms your wallet has granted approval
+                  to and revoke the ones you no longer need.
+                </span>
+              </p>
+              <p
+                class="text-textColor text-2xl font-bold flex justify-center items-center"
+              >
+                <i
+                  class="fa-solid fa-check border-white rounded-full p-8 mr-5 relative text-3xl font-bold text-center"
+                ></i>
+                <span>
+                  <span class="font-extrabold">
+                    Spot scam projects in one glance
+                  </span>
+                  <br />
+                  Our refined algorithm and well designed user interface helps you
+                  filter through the noise just with a few simple clicks
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------------
+                        COMPETITORS SECTION
+      ------------------------------------------------------->
+      <div id="competitors"
+        class="md:container sm:w-full sm:px-5 pt-20 mb-20 flex flex-col justify-center items-center"
+      >
+        <h2 class="font-extrabold text-textColor md:text-6xl sm:text-4xl mb-10 text-center">
+          The Super Dashboard to rule <br />
+          All Web3 Dashboards
+        </h2>
+        <p class="text-textColor text-2xl mb-10 text-center">
+          lets do a quick feature analysis to see how we stack up against the
+          market competition.
+        </p>
+        <table class="table-auto min-w-full divide-y scroll-m-2">
+          <thead class="divide-y divide-primaryColor border-none">
+            <tr
+              class="flex flex-row justify-center items-center w-full mb-5 py-5 pl-5"
+            >
+              <th
+                class="text-textColor text-2xl text-left font-bold tracking-wider md:w-1/2 sm:w-1/4"
+              >
+                Features
+              </th>
+              <th
+                class="text-textColor text-2xl text-left font-bold tracking-wider w-1/6 flex md:flex-row sm:flex-col justify-center items-center"
+              >
+                <figure class="w-10 h-auto mr-3">
+                  <img
+                    src="https://home.metadapp.com/assets/img/table-meta.png"
+                    alt="Metadapp"
+                    class="w-full h-full"
+                  />
+                </figure>
+                Metadapp
+              </th>
+              <th
+                class="text-textColor text-2xl text-left font-bold tracking-wider w-1/6 flex md:flex-row sm:flex-col justify-center items-center"
+              >
+                <figure class="w-10 h-auto mr-3">
+                  <img
+                    src="https://home.metadapp.com/assets/img/table-nansen.png"
+                    alt="Nansen"
+                    class="w-full h-full"
+                  />
+                </figure>
+                Nansen
+              </th>
+              <th
+                class="text-textColor text-2xl text-left font-bold tracking-wider w-1/6 flex md:flex-row sm:flex-col justify-center items-center"
+              >
+                <figure class="w-10 h-auto mr-3">
+                  <img
+                    src="https://home.metadapp.com/assets/img/table-debank.svg"
+                    alt="Nansen"
+                    class="w-full h-full"
+                  />
+                </figure>
+                Debank
+              </th>
+              <th
+                class="text-textColor text-2xl text-left font-bold tracking-wider w-1/6 flex md:flex-row sm:flex-col justify-center items-center"
+              >
+                <figure class="w-10 h-auto mr-3">
+                  <img
+                    src="https://home.metadapp.com/assets/img/table-dexguru.jpeg"
+                    alt="Nansen"
+                    class="w-full h-full"
+                  />
+                </figure>
+                Dex Guru
+              </th>
+              <th
+                class="text-textColor text-2xl text-left font-bold tracking-wider w-1/6 flex md:flex-row sm:flex-col justify-center items-center"
+              >
+                <figure class="w-10 h-auto mr-3">
+                  <img
+                    src="https://home.metadapp.com/assets/img/table-coin.png"
+                    alt="Nansen"
+                    class="w-full h-full"
+                  />
+                </figure>
+                Coin98
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2 sm:w-1/4 font-bold">Premium NFT tools</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+            </tr>
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2 sm:w-1/4 font-bold">Smart Alerts automation</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+            </tr>
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2 sm:w-1/4 font-bold">Smart Money Mode</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+            </tr>
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2  sm:w-1/4 font-bold">Tradeviewer</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+            </tr>
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2 sm:w-1/4 font-bold">Asset Management dashboard</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+            </tr>
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2 sm:1/4 font-bold">Defi dashboard</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+            </tr>
+            <tr
+              class="flex flex-row justify-center items-center w-full bg-bgTable mb-5 py-5 pl-5 rounded-2xl text-2xl border-none"
+            >
+              <td class="text-textColor md:w-1/2 sm:w-1/4 font-bold">Due dilligence tools</td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              <td class="w-1/6 flex flex-row justify-center items-center">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i
+                  class="fa-solid fa-circle-xmark text-red-500 flex flex-row justify-center items-center"
+                ></i>
+              </td>
+              <td class="w-1/6">
+                <i class="fa-solid fa-circle-check text-green-500 flex flex-row justify-center items-center"></i>
+              </td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!---------------------------------------------------
+                        VISION SECTION
+      ------------------------------------------------------->
+      <div id="vision" class="container mx-auto h-auto pt-20 mb-20 flex flex-col justify-center items-center">
+        <h2 class="font-bold text-textColor text-5xl mb-10">
+          The Metadapp Vision
+        </h2>
+        <p class="text-textColor text-2xl mb-10 text-center">
+          To build a comprehensive solution that makes Web3 easier to use and to
+          develop infrastructure layers that create an easy gateway to onboard
+          the next 100 million users.
+        </p>
+        <figure class="w-96 h-auto">
+          <img src="https://home.metadapp.com/assets/img/logo1.png" alt="Logo" class="w-full h-full">
+        </figure>
+      </div>
+      <!---------------------------------------------------
+                        COMMUNITY
+      ------------------------------------------------------->
+
+      <div class="container mx-auto h-auto md:p-20 sm:p-10 mb-20 flex flex-col justify-center items-center bg-tertiaryColor rounded-3xl space-y-10">
+        <h2 class="font-bold text-textColor md:text-5xl sm:text-3xl mb-10">
+          Join The Metadapp Community
+        </h2>
+        <div class="flex flex-row justify-between items-center sm:w-80 md:w-1/2">
+          <a href="#" class="no-underline text-textColor">
+            <i class="fa-brands fa-discord text-5xl"></i>
+          </a>
+          <a href="#" class="no-underline text-textColor">
+            <i class="fa-brands fa-twitter text-5xl"></i>
+          </a>
+          <a href="#" class="no-underline text-textColor">
+            <i class="fa-brands fa-telegram text-5xl"></i>
+          </a>
+        </div>
+      </div>
+      <!---------------------------------------------------
+                        FOOTER
+      ------------------------------------------------------->
+      <div class="container mx-auto h-auto md:pt-10 sm:pt-5 mt-40 mb-10 flex md:flex-row sm:flex-col justify-between items-center border-t-2 border-textColor">
+        <div class="flex flex-row justify-center items-center sm:m-10">
+          <p class="text-textColor text-xl"> Built with ❤️ by  </p> &nbsp;
+          <figure class="w-32 h-auto"> 
+            <img src="https://home.metadapp.com/assets/img/fusion_black.jpeg" alt="Fusion Black Labs" class="w-full h-full"> 
+          </figure>
+        </div>
+        <p class="text-textColor text-xl"> 2022 Metadapp, All rights reserved. </p>
+      </div>
+      <!----------------------------------------------------
+                          PRELOADER
+      ------------------------------------------------------->
+      <div
+        class="preloader w-screen h-screen bg-primaryColor flex flex-col justify-center items-center absolute top-0 left-0 z-50"
+      >
+        <div class="curve-container relative w-40 h-40">
+          <div class="curve"></div>
+          <div class="curve"></div>
+          <div class="curve"></div>
+        </div>
+        <h6 class="mt-10 sm:text-2xl md:text-3xl text-textColor font-semibold">
+          All in one Web3 Dashboard
+        </h6>
+      </div>
+
+      <!----------------------------------------------------
+                          SOCIALS
+      ------------------------------------------------------->
+        <div class="fixed bottom-12 left-14 w-auto h-auto flex flex-col justify-center items-center">
+          <div class="flex flex-row justify-between items-center w-60 h-auto mb-5">
+            <a href="#" class="no-underline text-textColor">
+              <i class="fa-brands fa-telegram text-5xl"></i>
+            </a>
+            <a href="#" class="no-underline text-textColor">
+              <i class="fa-brands fa-twitter text-5xl"></i>
+            </a>
+            <a href="#" class="no-underline text-textColor">
+              <i class="fa-brands fa-discord text-5xl"></i>
+            </a>
+          </div>
+          <p class="text-textColor text-2xl"> Join Our Community </p>
+        </div>
+    </div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>

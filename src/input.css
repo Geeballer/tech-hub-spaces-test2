@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px #3a5b5f;
+    border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px #ccd2eb;
+    border-radius: 1rem;
+}
+
+body{
+    background: #00020d;
+}
+
+/**********************************************
+                    Preloader
+***********************************************/
+
+.curve-container{
+    border-radius: 50%;
+    perspective: 50rem;
+}
+
+.curve{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    border-radius: inherit;
+    filter: drop-shadow(0 0 5px #709ff8de);
+    animation: 2s linear infinite;
+}
+
+.curve:nth-child(1){
+    border-bottom: 1rem solid #1463f7;
+    transform: rotateX(35deg) rotateY(-45deg);
+    animation-name: curve1;
+}
+
+.curve:nth-child(2){
+    border-right: 1rem solid #1463f7;
+    transform: rotateX(50deg) rotateY(10deg);
+    animation-name: curve2;
+}
+
+.curve:nth-child(3){
+    border-top: 1rem solid #1463f7;
+    transform: rotateX(35deg) rotateY(55deg);
+    animation-name: curve3;
+}
+  
+  /* animations */
+  @keyframes curve1 {
+    to {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes curve2 {
+    to {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes curve3 {
+    to {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+
+  /******* Hide preloader ********/
+
+  .invisible{
+    animation: hide 6s forwards;
+  }
+
+  @keyframes hide {
+    100%{
+        opacity: 0;
+        display: none;
+    }
+  }
+
+    /******* Image Background Round ********/
+
+    .ball-1{
+        left: 70%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .ball-2{
+        top: 0;
+        left: 60%;
+    }
+
+    .ball-3{
+        top: 15%;
+        right: -10%;
+    }
+
+    .ball-4{
+        top: 30%;
+        right: -20%;
+    }
+
+    .ball-5{
+        top: 40%;
+        right: -10%;
+    }
+
+    .ball-6{
+        top: 55%;
+        right: -15%;
+    }
+
+    .ball-7{
+        bottom: 25%;
+        right: 15%;
+    }
+
+    .ball-8{
+        bottom: 10%;
+        left: 45%;
+    }
+
+    .ball-9{
+        bottom: 40%;
+        left: 20%;
+    }
+
+    .ball-10{
+        top: 10%;
+        left: 10%;
+    }
+
+    /******* Image Background Round ********/
+
+    .imgBgRound{
+        border-top-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+    }
+
+    p > i{
+        background: #1463f7;
+    }
+
+    p > i::before{
+        content: '';
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .border-rotate1,
+    .border-rotate2{
+        width: 38rem;
+        height: 38rem;
+        border: 1.5px dashed #777;
+    }
+
+    .border-rotate1::before{
+        content: '';
+        position: absolute;
+        width: 12rem;
+        height: 12rem;
+        top: -10%;
+        left: 20%;
+        background: url(https://home.metadapp.com/assets/img/Portfolio/1.svg);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .border-rotate1::after{
+        content: '';
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 50%;
+        left: -5%;
+        background: url(https://home.metadapp.com/assets/img/Portfolio/2.svg);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .border-rotate2::before{
+        content: '';
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        bottom: 35%;
+        right: -5%;
+        background: url(https://home.metadapp.com/assets/img/Portfolio/4.svg);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .banner-image{
+        width: 80rem;
+        top: 10%;
+        left: 60%;
+    }
+
+
+    .slider{
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slide-wrapper{
+        width: 10000%;
+        transition: all 750ms ease;
+        overflow: hidden;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+    }
+
+    .slide-list{
+        width: 100vw;
+    }
+
+    .hero-btn{
+        width: 15rem;
+        text-decoration: none;
+    }
