@@ -70,3 +70,11 @@ window.onload = () => {
   /********************** Initialize WOW ********************/
 
   new WOW().init();
+
+  const menu = document.querySelector('.menu'),
+        linkList = document.querySelector('.link-list')
+//fa-times 
+  
+menu.addEventListener('click', () => {
+    linkList.classList.remove('close')
+})

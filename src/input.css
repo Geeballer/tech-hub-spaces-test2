@@ -180,8 +180,6 @@ body{
 
     .border-rotate1,
     .border-rotate2{
-        width: 38rem;
-        height: 38rem;
         border: 1.5px dashed #777;
     }
 
@@ -221,13 +219,6 @@ body{
         background-position: center;
     }
 
-    .banner-image{
-        width: 80rem;
-        top: 10%;
-        left: 60%;
-    }
-
-
     .slider{
         width: 100vw;
         height: auto;
@@ -253,4 +244,9 @@ body{
     .hero-btn{
         width: 20rem;
         text-decoration: none;
+    }
+
+    .close{
+        height: 0;
+        display: none;
     }
