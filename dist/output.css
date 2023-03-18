@@ -664,6 +664,10 @@ video {
   margin-left: 0px;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -682,10 +686,6 @@ video {
 
 .mt-40{
   margin-top: 10rem;
-}
-
-.mr-2{
-  margin-right: 0.5rem;
 }
 
 .block{
@@ -739,6 +739,14 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[45vh\]{
+  height: 45vh;
+}
+
+.h-\[42vh\]{
+  height: 42vh;
 }
 
 .w-1\/4{
@@ -834,10 +842,6 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
-}
-
-.resize{
-  resize: both;
 }
 
 .scroll-m-2{
@@ -985,6 +989,10 @@ video {
   padding: 2rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -1033,6 +1041,10 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -1380,6 +1392,7 @@ p > i::before{
 .close{
   height: 0;
   display: none;
+  transition: all 5s ease-in-out;
 }
 
 .open{
@@ -1439,10 +1452,6 @@ p > i::before{
 
   .sm\:mb-10{
     margin-bottom: 2.5rem;
-  }
-
-  .sm\:hidden{
-    display: none;
   }
 
   .sm\:w-full{

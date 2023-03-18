@@ -10,71 +10,27 @@ window.addEventListener('load', () => {
 })
 
 /**********************************************
+                NAV MENU
+ **********************************************/
+
+const menu = document.querySelector('.fa'),
+      linkList = document.querySelector('.link-list')
+
+const onToggleMenu = () => {
+    linkList.classList.toggle('close')
+    menu.classList.toggle('fa-bars')  
+    menu.classList.toggle('fa-times')    
+}
+
+/**********************************************
                 CAROUSEL SLIDE
  **********************************************/
-const slider = document.querySelector('.slider'),
-      slideList = document.querySelector('slide-wrapper'),
-      slideItems = document.querySelectorAll('.slide-list'),
-      prev = document.querySelector('.prev'),
-      next = document.querySelector('.next'),
-      sliderWidth = slider.offsetWidth,
-      count = 1;
 
-const responsiveSlider = () => {
-    
-    window.addEventListener('resize', () => {
-        sliderWidth = slider.offsetWidth
-    })
 
-    const prevSlide = () => {
-        if (count > 1){
-            count = count - 2
-            slideList.style.left = '_' + count * sliderWidth + 'px'
-            count++
-        }
-        else if (count == 1){
-            count = slideItems - 1
-            slideList.style.left = '_' + count * sliderWidth + 'px'
-            count++
-        }
-    }
 
-    const nextSlide = () => {
-        if (count < slideItems){
-            slideList.style.left = '_' + count * sliderWidth + 'px'
-            count++
-        }
-        else if (count == slideItems){
-            slideList.style.left = '0px'
-            count = 1
-        }
-    }
+/**********************************************
+                INITIALIZE WOW JS
+ **********************************************/
 
-    next.addEventListener('click', () => {
-        nextSlide()
-    })
+  new WOW().init()
 
-    prev.addEventListener('click', () => {
-        prevSlide()
-    })
-
-    setInterval(() => {
-        nextSlide()
-    }, 5000)
-}
-
-window.onload = () => {
-    responsiveSlider()
-}
-
-  /********************** Initialize WOW ********************/
-
-  new WOW().init();
-
-  const menu = document.querySelector('.menu'),
-        linkList = document.querySelector('.link-list')
-
-  
-menu.addEventListener('click', () => {
-    linkList.classList.toggle('close')
-})

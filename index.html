@@ -48,31 +48,42 @@
           </a>
         </figure>
         <!--------- Nav List-------->
-        <div
-          class="flex md:flex-row flex-col md:items-center items-start justify-between w-full absolute top-[15rem] left-0 bg-primaryColor h-[40vh] md:top-0 md:bg-transparent md:h-auto md:w-[90%] md:relative  px-5 md:px-0 font-bold link-list close sm:hidden md:flex"
+        <ul
+          class="flex md:flex-row flex-col md:items-center items-start justify-between w-full absolute top-[15rem] left-0 bg-primaryColor h-[42vh] md:top-0 md:bg-transparent md:h-auto md:w-[90%] md:relative  px-5 md:px-0 font-bold md:flex link-list close"
         >
-          <a href="#features" class="font-semibold text-textColor text-2xl">
-            Features
-          </a>
-          <a href="#automation" class="font-semibold text-textColor text-2xl">
-            Automation tools
-          </a>
-          <a href="#dashboard" class="font-semibold text-textColor text-2xl">
-            Dashboards
-          </a>
-          <a href="#competitors" class="font-semibold text-textColor text-2xl">
-            Competitors
-          </a>
-          <a href="#vision" class="font-semibold text-textColor text-2xl"> Vision </a>
-          <a
+          <li>
+            <a href="#features" class="font-semibold text-textColor text-2xl" onclick="onToggleMenu()">
+              Features
+            </a>    
+          </li>
+          <li>
+            <a href="#automation" class="font-semibold text-textColor text-2xl" onclick="onToggleMenu()">
+              Automation tools
+            </a>
+          </li>
+          <li>
+            <a href="#dashboard" class="font-semibold text-textColor text-2xl" onclick="onToggleMenu()">
+              Dashboards
+            </a>
+          </li>
+          <li>
+            <a href="#competitors" class="font-semibold text-textColor text-2xl" onclick="onToggleMenu()">
+              Competitors
+            </a>
+          </li>
+          <li>
+            <a href="#vision" class="font-semibold text-textColor text-2xl" onclick="onToggleMenu()"> Vision </a>  
+          </li>
+          <li>
+            <a
             href="https://tech-hub-spaces-test.netlify.app/"
-            class="font-semibold text-textColor text-2xl px-5 py-5 bg-secondaryColor rounded-2xl"
+            class="font-semibold text-textColor text-2xl px-5 py-5 bg-secondaryColor rounded-2xl" onclick="onToggleMenu()"
           >
             Go To Dashboard
           </a>
-        </div>
-        <i class="fa fa-bars mr-2 md:hidden block text-textColor text-4xl cursor-pointer" aria-hidden="true"></i>
-        <i class="fa fa-times mr-5 hidden text-textColor text-4xl cursor-pointer" aria-hidden="true"></i>
+          </li>
+        </ul>
+        <i class="fa fa-bars mr-5 md:hidden block text-textColor text-4xl" aria-hidden="true" onclick="onToggleMenu()"></i>
       </nav>
 
       <!---------------------------------------------------
