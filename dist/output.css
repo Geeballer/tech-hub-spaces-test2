@@ -631,8 +631,8 @@ video {
   top: 50%;
 }
 
-.top-\[16rem\]{
-  top: 16rem;
+.top-\[15rem\]{
+  top: 15rem;
 }
 
 .m-10{
@@ -682,6 +682,10 @@ video {
 
 .mt-40{
   margin-top: 10rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
 }
 
 .block{
@@ -1378,6 +1382,11 @@ p > i::before{
   display: none;
 }
 
+.open{
+  height: 40vh;
+  display: block;
+}
+
 @media (min-width: 768px){
   .md\:container{
     width: 100%;
@@ -1430,6 +1439,10 @@ p > i::before{
 
   .sm\:mb-10{
     margin-bottom: 2.5rem;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:w-full{
@@ -1528,6 +1541,10 @@ p > i::before{
     left: 60%;
   }
 
+  .md\:top-0{
+    top: 0px;
+  }
+
   .md\:top-1\/2{
     top: 50%;
   }
@@ -1623,6 +1640,10 @@ p > i::before{
 
   .md\:w-\[80rem\]{
     width: 80rem;
+  }
+
+  .md\:w-\[90\%\]{
+    width: 90%;
   }
 
   .md\:w-auto{

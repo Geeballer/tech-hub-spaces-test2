@@ -250,3 +250,8 @@ body{
         height: 0;
         display: none;
     }
+
+    .open{
+        height: 40vh;
+        display: block;
+    }
